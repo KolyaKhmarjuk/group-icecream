@@ -1,0 +1,12 @@
+.container{
+    @media screen and (max-width: 320px) {
+        width: 320px;
+        padding: 0px 20px 0px 20px;
+    }
+}
+
+.section{
+    @media screen and (max-width: 320px) {
+        padding: 80px 0px 80px 0px;
+    }
+}

@@ -3,14 +3,30 @@
 ::before {
     box-sizing: border-box;
 }
+
+body{
+    font-family: DM Sans, sans-serif;
+    color: #000000;
+    background: #FFFFFF;
+}
+
 img{
     display: block;
     max-width: 100%;
     height: auto;
 }
+
+a{
+    text-decoration: none;
+}
+
 h1,h2,h3,h4,h5,h6,p,ul{
     margin: 0px;
     padding: 0px;
 }
 
+ul{
+    list-style: none;
+    text-decoration: none;
+}
 
