@@ -1,2 +1,13 @@
-@import './common';
-@import './example';
+@import './utils/base';
+@import './utils/variables';
+@import './utils/placeholdres';
+@import './utils/mixins';
+@import './utils/container';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/gallery';
+@import './layout/comments';
+@import './layout/address';
+@import './layout/footer';
