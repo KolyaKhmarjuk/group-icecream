@@ -1,8 +1,10 @@
 @import './utils/base';
 @import './utils/variables';
+@import './utils/container';
+@import './utils/hamburger';
 @import './utils/placeholdres';
 @import './utils/mixins';
-@import './utils/container';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';

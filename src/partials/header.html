@@ -1,4 +1,45 @@
 <!DOCTYPE html>
-<section class="page">
-  <p>Коля Хмарюк</p>
+
+<section class="header">
+  <div class="header_container">
+    <img class="logo" src="./images/logo.png" alt="" />
+
+    <button
+      class="hamburger hamburger--emphatic js-open-menu"
+      type="button"
+      aria-label="Menu"
+      aria-controls="navigation"
+      aria-expanded="true/false"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+  <div class="backdrop is-hidden" data-modal>
+    <div
+      class="menu-container js-menu-container"
+      id="mobile-menu"
+      aria-expanded="false"
+    >
+      <nav>
+        <button class="buyNowButton">Buy now</button>
+        <ul class="mobilemenu__list">
+          <li class="mobilemenu__item">Home</li>
+          <li class="mobilemenu__item">About us</li>
+          <li class="mobilemenu__item">How it`s made?</li>
+          <li class="mobilemenu__item">Our products</li>
+          <li class="mobilemenu__item">Contact</li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 </section>
+<script src="./js/hamburger.js"></script>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>
+<script src="./js/mobile-menu.js"></script>
