@@ -1,0 +1,68 @@
+.hero {
+  position: relative;
+  height: 447px;
+
+  background-color: #ffb8ca;
+}
+.hero__container {
+  @extend .container;
+  padding-right: 0;
+}
+.elipse {
+  position: absolute;
+  top: 37px;
+  right: 0;
+}
+.icecream {
+  position: absolute;
+  top: 37px;
+  right: 0;
+  margin-right: 32px;
+}
+.slogan {
+  position: absolute;
+  margin-left: 20px;
+  top: 137px;
+  left: 0;
+  width: 218px;
+  height: 106px;
+
+  &__first {
+    font-family: 'Titan One';
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15em;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+  }
+
+  &__second {
+    font-size: 48px;
+    color: $TitanMain_color;
+  }
+}
+.description {
+  position: absolute;
+  top: 262px;
+  left: 20px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+}
+.description__button {
+  @extend %button;
+
+  width: 62px;
+  height: 24px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25em;
+
+  &--size {
+    width: 83px;
+    height: 24px;
+  }
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}

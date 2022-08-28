@@ -1,3 +1,74 @@
-.page{
-    color: red;
+.header {
+  background-color: #ffb8ca;
+}
+.header_container {
+  position: relative;
+  @extend .container;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.logo {
+  padding-top: 5px;
+}
+.buyNowButton {
+  @extend %button;
+
+  margin-top: 60px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.menu-container {
+  // display: none;
+  @extend .container;
+
+  background-color: #e17992;
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 502px;
+
+  z-index: 99;
+
+  transform: translateX(150%);
+  transition: transform 400ms linear;
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobilemenu__list {
+  @extend %list;
+}
+.mobilemenu__item {
+  color: #ffffff;
+  font-family: 'DM Sans';
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28em;
+  display: flex;
+  align-items: center;
+
+  &:not(:first-child) {
+    margin-top: 23px;
+  }
+  &:first-child {
+    margin-top: 32px;
+  }
+  &:hover,
+  &:focus {
+    color: $TitanMain_color;
+  }
 }
