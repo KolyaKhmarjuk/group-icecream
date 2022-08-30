@@ -16,9 +16,16 @@
         font-size: 26px;
         line-height: 1;
     }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1;
+        letter-spacing: 0.04px;
+    }
 }
 .products__subtitle{
     margin-bottom: 144px;
+    
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
@@ -30,8 +37,19 @@
     color: $TitanMain_color;
 
     @media screen and (min-width: 768px) {
+        margin-bottom: 150px;
+
         font-size: 48px;
         line-height: 1;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 259px;
+
+        font-size: 58px;
+        line-height: 1;
+        letter-spacing: 0.06em;
+        
     }
 }
 
@@ -64,6 +82,11 @@
             margin-right: 20px;
         }
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 330px;
+
+    }
 }
 .milkshakes--color-bg{
     background-color: #C2E297;
@@ -74,13 +97,17 @@
 
 .products__img{
     position: absolute;
-    right: 15;
-    top: -24%;
+    right: 0;
+    left: 0;
+    top: -23%;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (min-width: 768px) {
-        right: 0;
+        top: -21%;
+    }
+    @media screen and (min-width: 1200px) {
+        top: -30%;
     }
 }
 
@@ -100,6 +127,12 @@
     font-size: 20px;
     line-height: 1.1;
 
+    @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.1;
+
+    }
+
 }
 .products__item-subtitle{
     font-family: 'DM Sans';
@@ -108,6 +141,11 @@
     font-size: 14px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.7;
+    }
 }
 .products__ellips{
     display: flex;
