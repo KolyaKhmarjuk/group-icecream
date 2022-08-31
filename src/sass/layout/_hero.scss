@@ -1,31 +1,72 @@
 .hero {
   position: relative;
   height: 447px;
-
+  // overflow-x: hidden;
   background-color: #ffb8ca;
+
+  // @media screen and (min-width: 768px) and (max-width: 1199px) {
+  //   overflow-x: visible;
+  // }
 }
 .hero__container {
   @extend .container;
+  width: 100%;
+  height: 100%;
   padding-right: 0;
+  overflow-x: hidden;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    overflow-x: visible;
+    padding: 0 34px 0 34px;
+  }
 }
-.elipse {
+.ellipse {
+  position: relative;
+}
+.ellipse::before {
+  content: '';
   position: absolute;
-  top: 37px;
-  right: 0;
+  top: 20px;
+  left: 35px;
+  display: block;
+  width: 344px;
+  height: 344px;
+  border-radius: 50%;
+  background-color: $TitanSecond_color;
+  z-index: 99;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    z-index: 100;
+    width: 328px;
+    height: 322px;
+    top: -65px;
+    left: 294px;
+  }
+}
+.image__container {
+  position: relative;
+  z-index: 103;
+
+  @media screen and (max-width: 767px) {
+    left: 37%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    left: 378px;
+    bottom: 22px;
+  }
 }
 .icecream {
-  position: absolute;
-  top: 37px;
-  right: 0;
-  margin-right: 32px;
+  position: relative;
 }
 .slogan {
   position: absolute;
   margin-left: 20px;
-  top: 137px;
+  top: 110px;
   left: 0;
   width: 218px;
   height: 106px;
+  z-index: 104;
 
   &__first {
     font-family: 'Titan One';
@@ -40,16 +81,20 @@
     font-size: 48px;
     color: $TitanMain_color;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    top: 0px;
+    left: 34px;
+    margin-top: 15px;
+    margin-left: 0;
+  }
 }
-.description {
-  position: absolute;
-  top: 262px;
-  left: 20px;
+.slogan__descriptionButton {
   display: inline-flex;
   align-items: center;
   text-align: center;
+  margin-top: 20px;
 }
-.description__button {
+.slogan__button {
   @extend %button;
 
   width: 62px;
