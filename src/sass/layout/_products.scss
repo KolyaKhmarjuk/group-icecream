@@ -2,54 +2,18 @@
 .products__text{
     text-align: center;
 }
-.products__title{
-    margin-bottom: 15px;
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1;
-
-    color: $TitanSecond_color;
-
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: 1;
-    }
-
-    @media screen and (min-width: 1200px) {
-        font-size: 30px;
-        line-height: 1;
-        letter-spacing: 0.04px;
-    }
-}
 .products__subtitle{
+    margin-bottom: 15px;
+}
+.products__title{
     margin-bottom: 144px;
-    
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: 0.04em;
-
-    color: $TitanMain_color;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 150px;
-
-        font-size: 48px;
-        line-height: 1;
     }
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 259px;
-
-        font-size: 58px;
-        line-height: 1;
-        letter-spacing: 0.06em;
-        
     }
 }
 
