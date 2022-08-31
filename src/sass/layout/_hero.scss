@@ -20,10 +20,10 @@
     padding: 0 34px 0 34px;
   }
 }
-.ellipse {
+.ellipse__hero {
   position: relative;
 }
-.ellipse::before {
+.ellipse__hero::before {
   content: '';
   position: absolute;
   top: 20px;
