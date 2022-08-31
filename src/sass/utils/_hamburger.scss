@@ -3,8 +3,9 @@
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
-  z-index: 101;
-  padding-right: 20px;
+  z-index: 106;
+  // padding-right: 20px;
+  padding-top: 15px;
 
   transition-property: opacity, filter;
   transition-duration: 0.15s;
@@ -48,13 +49,25 @@
   &.is-active .hamburger-inner::after {
     background-color: #ffffff;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 0px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: auto;
+    margin-top: 43px;
+  }
 }
 
 .hamburger-box {
   width: $hamburger-layer-width;
   height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
   display: inline-block;
-  position: relative;
+  // position: relative;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-flex;
+  }
 }
 
 .hamburger-inner {
@@ -87,6 +100,10 @@
 
   &::after {
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 20px;
+    display: inline-flex;
   }
 }
 
