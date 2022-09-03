@@ -14,14 +14,23 @@
   align-items: center;
   text-align: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     padding-top: 37px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+    z-index: 104;
   }
 }
 .logo {
   padding-top: 5px;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) {
     padding-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 55px;
+    margin-left: -70px;
   }
 }
 .buyNowButton {
@@ -40,6 +49,10 @@
   @media screen and (min-width: 768px) {
     margin-top: 0px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 180px;
+    margin-left: 10px;
+  }
 }
 .buyNowButton--size {
   width: 160px;
@@ -48,6 +61,9 @@
 
   @media screen and (min-width: 320px) and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
   }
 }
 .menu-container {
@@ -66,6 +82,18 @@
 
   transform: translateX(150%);
   transition: transform 400ms linear;
+
+  @media screen and (min-width: 1199px) {
+    display: none;
+  }
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    min-width: 250px;
+    height: 100%;
+    padding: 0 24px 0 24px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 60px;
+  }
 }
 .menu-container.is-open {
   transform: translateX(0);
@@ -94,4 +122,21 @@
   &:focus {
     color: $TitanMain_color;
   }
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31em;
+  color: #ffffff;
+
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    display: none;
+  }
+}
+.navigation__item:not(:last-child) {
+  margin-right: 35px;
 }
