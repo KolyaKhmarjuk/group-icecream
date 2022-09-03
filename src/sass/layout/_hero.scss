@@ -1,12 +1,12 @@
 .hero {
   position: relative;
   height: 447px;
-  // overflow-x: hidden;
+
   background-color: #ffb8ca;
 
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   overflow-x: visible;
-  // }
+  @media screen and (min-width: 768px) {
+    height: 100%;
+  }
 }
 .hero__container {
   @extend .container;
@@ -17,7 +17,12 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     overflow-x: visible;
-    padding: 0 34px 0 34px;
+    padding-right: 36px;
+  }
+  @media screen and (min-width: 1200px) {
+    overflow-x: visible;
+    padding-right: 100px;
+    max-width: 1280px;
   }
 }
 .ellipse__hero {
@@ -39,21 +44,32 @@
     z-index: 100;
     width: 328px;
     height: 322px;
-    top: -65px;
-    left: 294px;
+    top: -40px;
+    left: 280px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 538px;
+    height: 538px;
+    top: -63;
+    left: 410px;
   }
 }
 .image__container {
   position: relative;
   z-index: 103;
+  max-width: 236px;
 
   @media screen and (max-width: 767px) {
     left: 37%;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline-block;
-    left: 378px;
-    bottom: 22px;
+    left: 50%;
+    bottom: -3px;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 49%;
+    top: 0;
   }
 }
 .icecream {
@@ -75,11 +91,32 @@
     line-height: 1.15em;
     letter-spacing: 0.04em;
     color: #ffffff;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      font-size: 22px;
+      line-height: 1.14em;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 38px;
+      line-height: 1.14em;
+      width: 277px;
+    }
   }
 
   &__second {
     font-size: 48px;
     color: $TitanMain_color;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 58px;
+      line-height: 0.9em;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    left: 100px;
+    width: 277px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: 0px;
@@ -89,6 +126,7 @@
   }
 }
 .slogan__descriptionButton {
+  position: relative;
   display: inline-flex;
   align-items: center;
   text-align: center;
@@ -107,7 +145,159 @@
     width: 83px;
     height: 24px;
   }
+
   &:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 102px;
+    height: 40px;
+  }
+  &--size {
+    @media screen and (min-width: 1200px) {
+      width: 138px;
+      height: 40px;
+    }
+  }
+}
+.cupMilk {
+  position: absolute;
+  top: 180px;
+  left: 37px;
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    top: 60%;
+    left: 70px;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+.cupMilk__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 144px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 150%;
+  color: #ffffff;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 140%;
+    width: 200px;
+  }
+}
+.girl__ice {
+  position: absolute;
+  bottom: 0;
+  right: 34px;
+  z-index: 104;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    right: 100px;
+  }
+}
+.statistick {
+  text-align: end;
+  position: absolute;
+  top: 14px;
+  right: 44px;
+  z-index: 104;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    top: 50px;
+    right: 115px;
+  }
+}
+.statistick__number {
+  color: $TitanMain_color;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+
+  line-height: 1.14em;
+
+  z-index: 999;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    letter-spacing: 0.04em;
+    font-size: 46px;
+    line-height: 1.15em;
+  }
+}
+.statistick__description {
+  margin-bottom: 14px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 18px;
+  }
+}
+.statistick__number::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -5;
+  right: -7px;
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  background-color: #fff;
+
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+    top: -5px;
+    right: -15px;
+  }
+}
+.statistick__description--after::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 54px;
+  right: -7px;
+  display: block;
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+  background-color: #fff;
+  @media screen and (min-width: 1200px) {
+    width: 30px;
+    height: 30px;
+    top: 85px;
+    right: -15px;
+  }
+}
+.statistick__description {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+
+  color: #ffffff;
+
+  &--after {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.28em;
   }
 }
