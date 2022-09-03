@@ -1,0 +1,82 @@
+.about{
+    padding-top: 125px;
+    background-image: url('../images/bg-about-mob.png');
+    background-position: 0% 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-color: #FFF5F6;
+
+    @media screen and (min-width: 768px){
+        background-image: none;
+    }
+}
+
+
+.about__content{
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+.about__subtitle{
+    margin-bottom: 15px;
+    
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    
+    color: #FFA5BA;
+}
+.about__title {
+    margin-bottom: 26px;
+
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #D41443;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
+    }
+}
+.about__text-box{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about__text1{
+    margin-bottom: 47px;
+    margin-top: 47px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+}
+.about__text2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 162%;
+
+    color: #907E82;
+}
+.about__span {
+    display: block;
+    margin-top: 10px;
+}
+.about__btn{
+    margin-top: 47px;
+    width: 176px;
+    @extend %button
+}
