@@ -2,6 +2,7 @@
 %list {
   list-style: none;
 }
+
 %button {
   width: 210px;
   height: 44px;
@@ -16,5 +17,24 @@
   &:focus {
     background-color: $TitanMain_color;
     color: #ffffff;
+  }
+}
+
+.about__text{
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+
+  @media screen and (min-width: 768px) {
+   font-size: 14px;
+   line-height: 176%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
   }
 }
