@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 447px;
+  height: 441px;
 
   background-color: #ffb8ca;
 
@@ -15,14 +15,14 @@
   padding-right: 0;
   overflow-x: hidden;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     overflow-x: visible;
     padding-right: 36px;
+    width: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     overflow-x: visible;
     padding-right: 100px;
-    max-width: 1280px;
   }
 }
 .ellipse__hero {
@@ -40,14 +40,14 @@
   background-color: $TitanSecond_color;
   z-index: 99;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     z-index: 100;
     width: 328px;
     height: 322px;
     top: -40px;
     left: 280px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 538px;
     height: 538px;
     top: -63;
@@ -58,18 +58,21 @@
   position: relative;
   z-index: 103;
   max-width: 236px;
+  top: 30px;
 
   @media screen and (max-width: 767px) {
     left: 37%;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: inline-block;
     left: 50%;
-    bottom: -3px;
+    bottom: 20px;
+    top: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     left: 49%;
     top: 0;
+    display: inline-block;
   }
 }
 .icecream {
@@ -92,12 +95,12 @@
     letter-spacing: 0.04em;
     color: #ffffff;
 
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
       font-size: 22px;
       line-height: 1.14em;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 38px;
       line-height: 1.14em;
       width: 277px;
@@ -108,17 +111,17 @@
     font-size: 48px;
     color: $TitanMain_color;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       font-size: 58px;
       line-height: 0.9em;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 0;
     left: 100px;
     width: 277px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     top: 0px;
     left: 34px;
     margin-top: 15px;
@@ -141,24 +144,38 @@
   font-size: 8px;
   line-height: 1.25em;
 
+  &:hover,
+  &:focus {
+    background-color: $TitanMain_color;
+  }
+
   &--size {
     width: 83px;
     height: 24px;
+
+    &:hover,
+    &:focus {
+      background-color: #ecebeb;
+    }
   }
 
   &:not(:last-child) {
     margin-right: 8px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 102px;
     height: 40px;
   }
   &--size {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
       width: 138px;
       height: 40px;
     }
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28em;
   }
 }
 .cupMilk {
@@ -166,7 +183,7 @@
   top: 180px;
   left: 37px;
   display: flex;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     top: 60%;
     left: 70px;
   }
@@ -178,15 +195,24 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 144px;
+  width: 114px;
   font-weight: 400;
   font-size: 8px;
-  line-height: 150%;
+  line-height: 1.5em;
   color: #ffffff;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 140%;
     width: 200px;
+  }
+}
+.jumpsection {
+  margin-top: 20px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (max-width: 1279px) {
+    margin-top: 7px;
   }
 }
 .girl__ice {
@@ -198,7 +224,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     right: 100px;
   }
 }
@@ -212,7 +238,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     top: 50px;
     right: 115px;
   }
@@ -232,7 +258,7 @@
 
   text-transform: uppercase;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     letter-spacing: 0.04em;
     font-size: 46px;
     line-height: 1.15em;
@@ -240,7 +266,7 @@
 }
 .statistick__description {
   margin-bottom: 14px;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 18px;
   }
 }
@@ -257,7 +283,7 @@
   border-radius: 50%;
   background-color: #fff;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 30px;
     height: 30px;
     top: -5px;
@@ -276,7 +302,7 @@
 
   border-radius: 50%;
   background-color: #fff;
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     width: 30px;
     height: 30px;
     top: 85px;
@@ -296,7 +322,7 @@
     margin-bottom: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     font-size: 14px;
     line-height: 1.28em;
   }

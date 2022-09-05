@@ -49,22 +49,22 @@
   &.is-active .hamburger-inner::after {
     background-color: #ffffff;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    &.is-active {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    &.is-active .hamburger-inner {
       background-color: black;
       position: absolute;
-      top: 20px;
-      right: 50;
+      top: 10px;
+      right: 35px;
     }
   }
 
   @media screen and (min-width: 768px) {
     padding-top: 0px;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-left: auto;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     display: none;
   }
 }
@@ -75,7 +75,7 @@
   display: inline-block;
   // position: relative;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: inline-flex;
   }
 }
@@ -111,7 +111,7 @@
   &::after {
     bottom: ($hamburger-layer-spacing + $hamburger-layer-height) * -1;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: 20px;
     display: inline-flex;
   }
