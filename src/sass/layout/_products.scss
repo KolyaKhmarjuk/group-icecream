@@ -5,33 +5,30 @@
 .products__subtitle{
     margin-bottom: 15px;
 
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
+    @include subtitle;
 
-    color: #FFA5BA;
+    @media screen and (min-width: 768px) {
+        font-size: 26px;
+    }
+        
+    @media screen and (min-width: 1280px) {
+        font-size: 30px;
+    }
+
 }
 .products__title{
-    font-family: 'Titan One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 34px;
-    line-height: 1;
-    text-align: center;
-    letter-spacing: 0.04em;
-
-    color: #D41443;
-
     margin-bottom: 144px;
+
+    @include title;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 150px;
+        font-size: 48px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-bottom: 259px;
+        font-size: 58px;
     }
 }
 
@@ -65,7 +62,7 @@
         }
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         width: 330px;
 
     }
@@ -88,7 +85,7 @@
     @media screen and (min-width: 768px) {
         top: -21%;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         top: -30%;
     }
 }
@@ -109,7 +106,7 @@
     font-size: 20px;
     line-height: 1.1;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.1;
 
@@ -124,7 +121,7 @@
     line-height: 1.5;
     letter-spacing: 0.04em;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
     font-size: 16px;
     line-height: 1.7;
     }
