@@ -9,7 +9,16 @@
             <ul class="products__list">
 
                 <li class="products__item">
-                    <img class="products__img" srcset="./images/product1-mobile.png 1x, ./images/product1-mobile@2x.png 2x" alt="мороженое">
+                    <picture>
+                        <source
+                        srcset="./images/products1-desk.webp 1x, ./images/products1-desk@2x.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                        <source srcset="./images/products1-desk.png 1x, ./images/products1-desk@2x.png 2x" media="(min-width: 1280px)" type="image/png">
+                        <source srcset="./images/products1-tabl.webp 1x, ./images/products1-tabl@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/products1-tabl.png 1x, ./images/products1-tabl@2x.png 2x" media="(min-width: 768px)" type="image/png">
+                        <source srcset="./images/products1-mob.webp 1x, ./images/products1-mob@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
+                        <source srcset="./images/products1-mob.png 1x, ./images/products1-mob@2x.png 2x" media="(min-width: 320px)" type="image/png">
+                        <img  class="products__img"  src="./images/products1-desk.png"  alt="ICE CREAM">
+                    </picture>
                     <p class="products__item-text">ICE CREAM</p>
                     <div class="products__ellips">
                         <div class="ellips"></div>
@@ -28,7 +37,15 @@
                 </li>
 
                 <li class="products__item coffee--color-bg">
-                    <img class="products__img" srcset="./images/product2-mobile.png 1x, ./images/product2-mobile@2x.png 2x" alt="мороженое">
+                    <picture>
+                        <source srcset="./images/products2-desk.webp 1x, ./images/products2-desk@2x.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                        <source srcset="./images/products2-desk.png 1x, ./images/products2-desk@2x.png 2x" media="(min-width: 1280px)" type="image/png">
+                        <source srcset="./images/products2-tabl.webp 1x, ./images/products2-tabl@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/products2-tabl.png 1x, ./images/products2-tabl@2x.png 2x" media="(min-width: 768px)" type="image/png">
+                        <source srcset="./images/products2-mob.webp 1x, ./images/products2-mob@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
+                        <source srcset="./images/products2-mob.png 1x, ./images/products2-mob@2x.png 2x" media="(min-width: 320px)" type="image/png">
+                        <img class="products__img" src="./images/products2-desk.png" alt="COFFEE">
+                    </picture>
                     <p class="products__item-text">ICE COFFEE</p>
                     <div class="products__ellips">
                         <div class="ellips"></div>
@@ -47,7 +64,15 @@
                 </li>
 
                 <li class="products__item milkshakes--color-bg">
-                    <img class="products__img" srcset="./images/product3-mobile.png 1x, ./images/product3-mobile@2x.png 2x" alt="мороженое">
+                    <picture>
+                        <source srcset="./images/products3-desk.webp 1x, ./images/products3-desk@2x.webp 2x" media="(min-width: 1280px)" type="image/webp">
+                        <source srcset="./images/products3-desk.png 1x, ./images/products3-desk@2x.png 2x" media="(min-width: 1280px)" type="image/png">
+                        <source srcset="./images/products3-tabl.webp 1x, ./images/products3-tabl@2x.webp 2x" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="./images/products3-tabl.png 1x, ./images/products3-tabl@2x.png 2x" media="(min-width: 768px)" type="image/png">
+                        <source srcset="./images/products3-mob.webp 1x, ./images/products3-mob@2x.webp 2x" media="(min-width: 320px)" type="image/webp">
+                        <source srcset="./images/products3-mob.png 1x, ./images/products3-mob@2x.png 2x" media="(min-width: 320px)" type="image/png">
+                        <img class="products__img" src="./images/products3-desk.png" alt="MILKSHAKES">
+                    </picture>
                     <p class="products__item-text">MILKSHAKES</p>
                     <div class="products__ellips">
                         <div class="ellips"></div>
