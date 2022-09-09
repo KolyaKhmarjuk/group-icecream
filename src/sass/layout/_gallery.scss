@@ -1,8 +1,12 @@
-// .gallery{
-//     position: relative;
-// }
+.gallery__img{
+    position: relative;
+    bottom: 42px;
 
-// .gallery__img{
-//     position: absolute;
-//     top: 0;
-// }
+    @media screen and (min-width: 768px) {
+        bottom: 95px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        bottom: 145px;
+    }
+}

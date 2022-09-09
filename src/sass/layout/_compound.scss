@@ -1,7 +1,9 @@
 .compound{
+    position: relative;
     background-color:#FFF5F6 ;
 }
 .compound__list{
+
     display: block;
     padding-top: 39px;
     padding-bottom: 145px;
@@ -9,6 +11,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
     }
+
 }
 
 .compound__img{
@@ -40,6 +43,7 @@
     @media screen and (min-width: 1280px) {
         width: 330px;
         margin-bottom: 0px;
+        padding-bottom: 140px;
     }
 }
 
@@ -87,4 +91,3 @@
         letter-spacing: 0.02em;
     }
 }
-
