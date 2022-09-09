@@ -1,0 +1,118 @@
+.footer {
+  background-color: #fff5f6;
+  padding-top: 33px;
+
+  @media screen and(min-width: 768px) {
+    padding-top: 65px;
+  }
+}
+.footer__box {
+  @media screen and(min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about__subtitle--margin {
+  text-align: start;
+  display: block;
+  margin-bottom: 17px;
+  width: 232px;
+
+  @media screen and(min-width: 768px) {
+    width: 340px;
+    margin-bottom: 16px;
+  }
+}
+.about__title--margin {
+  display: block;
+  margin-bottom: 43px;
+  text-align: start;
+  width: 240px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0;
+    width: 340px;
+  }
+}
+.tabletMarkup__titile {
+  @media screen and (min-width: 768px) {
+    margin-right: 92px;
+  }
+}
+.footerSocial {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 46px;
+}
+
+.footerSocial__item {
+  display: block;
+  background: #fea5bb;
+
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: $TitanMain_color;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.footerSocial__link {
+  fill: #ffffff;
+  position: absolute;
+  left: 6px;
+  top: 6px;
+
+  z-index: 100;
+}
+.footerSocial__item {
+  position: relative;
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.footerContact {
+  display: flex;
+  @extend .adress__text;
+  justify-content: end;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 43px;
+}
+.footerContact__tel {
+  display: inline-block;
+  @extend .adress__text;
+  font-weight: 700;
+  color: $TitanMain_color;
+}
+.rightsBorder__text {
+  width: 150px;
+  height: 42px;
+  text-align: center;
+
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52em;
+  color: #907e82;
+}
+.rightsBorder::before {
+  content: '';
+  display: block;
+  margin-bottom: 22px;
+  width: 100%;
+  height: 2px;
+  background-color: #e1e1e1;
+}

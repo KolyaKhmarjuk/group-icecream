@@ -17,3 +17,17 @@ $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
 $hamburger-hover-use-filter: false !default;
 $hamburger-hover-filter: opacity(50%) !default;
 $hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+.adress__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83em;
+  color: black;
+  letter-spacing: 0.04em;
+}
+.flex__centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
