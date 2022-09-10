@@ -1,0 +1,2 @@
+var t=document.querySelectorAll(".hamburger");t.length>0&&function(t,e,c){if("[object Object]"===Object.prototype.toString.call(t))for(var l in t)Object.prototype.hasOwnProperty.call(t,l)&&e.call(c,t[l],l,t);else for(var o=0,r=t.length;r>o;o++)e.call(c,t[o],o,t)}(t,(function(t){t.addEventListener("click",(function(){this.classList.toggle("is-active")}),!1)}));
+//# sourceMappingURL=index.af7a5a9d.js.map
