@@ -1,8 +1,46 @@
 .section--color {
   background-color: #fff5f6;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/location-bg.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/location-bg@2x.png');
+    }
+
+    background-position: 0 102px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-color: #fff5f6;
+
+    @media screen and (min-width: 200px) and (max-width: 1279px) {
+      background-image: none;
+    }
+  }
+}
+.card__section {
+  position: relative;
+  top: -84px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    top: -78px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: -102px;
+  }
 }
 .card__list {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     flex-wrap: wrap;
     margin-left: -36px;
@@ -17,7 +55,15 @@
 
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
+    padding: 51px 44px 62px 43px;
+    flex-basis: calc((100% - 2 * 30px) / 3);
+    margin-bottom: 0;
+    &:nth-child(n + 2) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     flex-basis: calc((100% - 2 * 36px) / 3);
     margin-left: 36px;
 
@@ -40,6 +86,9 @@
 .card__border {
   border-bottom: 1px solid #e1e1e1;
 }
+.card__border--margin {
+  margin-top: 25px;
+}
 .card__type {
   @extend .flex__centered;
   @extend .adress__text;
@@ -57,6 +106,9 @@
     font-size: 16px;
     line-height: 1.86em;
   }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+  }
 }
 .card__type--food {
   background-color: #c2e297;
@@ -70,6 +122,10 @@
     font-size: 14px;
     line-height: 1.86em;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    letter-spacing: 0.04em;
+  }
 }
 .card__description {
   @extend .adress__text;
@@ -77,13 +133,24 @@
   color: #907e82;
   margin-bottom: 25px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.83em;
+    letter-spacing: 0.04em;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 14px;
     line-height: 1.66em;
   }
 }
 .card__dayWork {
   @extend .adress__text;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86em;
+    letter-spacing: 0.04em;
+  }
 }
 .card__timeWork {
   color: #ffa5ba;
@@ -93,6 +160,10 @@
     margin-bottom: 25px;
   }
 
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.86em;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.86em;
@@ -106,6 +177,10 @@
   line-height: 1.5em;
   color: #907e82;
 
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.83em;
+  }
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.83em;
@@ -116,33 +191,67 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1280px) {
+    margin-top: 86px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-top: 81px;
   }
 }
 .locationButton__map {
   @extend .flex__centered;
   @extend %button;
-  color: #ffffff;
-  background-color: $TitanMain_color;
+  color: $TitanMain_color;
+  background-color: #ffffff;
   width: 161px;
   margin-bottom: 10px;
 
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31em;
+
+  &:hover,
+  &:focus {
+    background-color: $TitanMain_color;
+    fill: #ffffff;
+  }
+  &:hover .bracket--white,
+  &:focus .bracket--white {
+    fill: #ffffff;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+  }
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     width: 191px;
     margin-right: 15px;
   }
 }
+.bracket {
+  margin-left: 14px;
+  fill: $TitanMain_color;
+}
 .locationButton__franchise {
   @extend .flex__centered;
   @extend %button;
   width: 161px;
+  color: $TitanMain_color;
 
-  @media screen and (min-width: 768px) {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31em;
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+    color: $TitanMain_color;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 174px;
   }
-}
-.arrowred {
-  background-origin: border-box;
 }
