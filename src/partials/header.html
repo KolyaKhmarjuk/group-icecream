@@ -2,45 +2,47 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <header>
   <section class="header">
-    <div class="header__container">
-      <a href="/">
-        <img class="logo" src="./images/logo.png" alt="Logo" />
-      </a>
+    <div class="container">
+      <div class="header__container">
+        <a href="/">
+          <img class="logo" src="./images/logo.png" alt="Logo" />
+        </a>
 
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="">About us</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="">How it`s made?</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="">Our products</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <button
-        class="hamburger hamburger--emphatic js-open-menu"
-        type="button"
-        aria-label="Menu"
-        aria-controls="navigation"
-        aria-expanded="true/false"
-      >
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      <button class="buyNowButton buyNowButton--size">
-        Buy now
-        <img class="redArrow" src="./images/arrowVectorRed.svg" alt="" />
-      </button>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Home</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">About us</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">How it`s made?</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Our products</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="hamburger hamburger--emphatic js-open-menu"
+          type="button"
+          aria-label="Menu"
+          aria-controls="navigation"
+          aria-expanded="true/false"
+        >
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <button class="buyNowButton buyNowButton--size">
+          Buy now
+          <img class="redArrow" src="./images/arrowVectorRed.svg" alt="" />
+        </button>
+      </div>
     </div>
     <div class="backdrop is-hidden" data-modal>
       <div
@@ -65,11 +67,3 @@
     </div>
   </section>
 </header>
-<script src="./js/hamburger.js"></script>
-<script
-  defer
-  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-  crossorigin="anonymous"
-></script>
-<script src="./js/mobile-menu.js"></script>
