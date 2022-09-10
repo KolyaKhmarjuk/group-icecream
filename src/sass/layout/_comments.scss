@@ -1,118 +1,110 @@
-.comments {
-  padding-top: 38px;
-
-  padding-bottom: 170px;
-
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-bottom: 197px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 234px;
-  }
+.comments{
+    padding-top: 38px;
 }
-.comments__img {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 72px;
+.comments__img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
 
-  @media screen and (min-width: 768px) {
-    margin-bottom: 19px;
-  }
+    @media screen and (min-width: 768px) {
+        margin-bottom: 19px;
+    }
 
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 15px;
-  }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 15px;
+    }
+    
 }
 
-.commets__text-box {
-  background: #fafafa;
-  position: relative;
+.commets__text-box{
+    background: #FAFAFA;
+    position: relative;
 }
 
-.comments__text {
-  position: relative;
+.comments__text{
+    position: relative;
 
-  width: 157px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 157px;
+    margin-left: auto;
+    margin-right: auto;
 
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 255%;
-  text-align: center;
-  z-index: 100;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+    text-align: center;
+    z-index: 100;
+    
+    text-decoration: underline;
+    text-decoration-color: #E1E1E1;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 1px;
 
-  text-decoration: underline;
-  text-decoration-color: #e1e1e1;
-  text-underline-offset: 10px;
-  text-decoration-thickness: 1px;
+    @media screen and (min-width: 768px) {
+        width: 460px;
 
-  @media screen and (min-width: 768px) {
-    width: 460px;
+        font-size: 14px;
+        line-height: 216%;
+        letter-spacing: 0.04em;
+        text-underline-offset: 6px;
+    }
 
+    @media  screen and (min-width: 1280px) {
+        width: 750px;
+        padding-top: 47px;
+        padding-bottom: 39px;
+
+        font-size: 16px;
+        line-height: 186%;
+        text-underline-offset: 7px;
+    }
+}
+
+.comments__mark{
+    position: absolute;
+    top: -15px;
+    left: 65px;
+    z-index: 99;
+
+    @media screen and(min-width: 768px) {
+        left: 75px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 125px;
+        top: 35px;
+    }
+}
+
+.comments__eclipse-box{
+    display: flex;
+    justify-content: center;
+}
+.comments__eclipse{
+    margin-top: 30px;
+    margin-bottom: 18px;
+    margin-right: 10px;
+    width: 0;
+    height: 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #C7133E;
+    border-radius: 50%;
+}
+
+.comments__address{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
     font-size: 14px;
-    line-height: 216%;
-    letter-spacing: 0.04em;
-    text-underline-offset: 6px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 750px;
-    padding-top: 47px;
-    padding-bottom: 39px;
-
-    font-size: 16px;
     line-height: 186%;
-    text-underline-offset: 7px;
-  }
-}
+    text-align: center;
 
-.comments__mark {
-  position: absolute;
-  top: -15px;
-  left: 65px;
-  z-index: 99;
-
-  @media screen and(min-width: 768px) {
-    left: 75px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    left: 125px;
-    top: 35px;
-  }
-}
-
-.comments__eclipse-box {
-  display: flex;
-  justify-content: center;
-}
-.comments__eclipse {
-  margin-top: 30px;
-  margin-bottom: 18px;
-  margin-right: 10px;
-  width: 0;
-  height: 0;
-  border-width: 3px;
-  border-style: solid;
-  border-color: #c7133e;
-  border-radius: 50%;
-}
-
-.comments__address {
-  font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 186%;
-  text-align: center;
-
-  @media screen and (min-width: 768px) {
-    font-size: 16px;
-  }
-  @media screen and (min-width: 1280px) {
-    font-size: 20px;
-  }
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
+    }
 }
