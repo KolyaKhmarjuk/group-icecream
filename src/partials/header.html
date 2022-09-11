@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <header>
   <section class="header">
-    <div class="container">
+    <div class="container container--nav">
       <div class="header__container">
         <a href="./">
           <img class="logo" src="./images/logo.png" alt="Logo" />
@@ -22,11 +22,12 @@
             <li class="navigation__item">
               <a class="navigation__link" href="">Our products</a>
             </li>
-            <li class="navigation__item">
+            <li class="navigation__item navigation__item--after">
               <a class="navigation__link" href="">Contact</a>
             </li>
           </ul>
         </nav>
+
         <button
           class="hamburger hamburger--emphatic js-open-menu"
           type="button"
@@ -45,23 +46,35 @@
       </div>
     </div>
     <div class="backdrop is-hidden" data-modal>
-      <div
-        class="menu-container js-menu-container"
-        id="mobile-menu"
-        aria-expanded="false"
-      >
-        <div>
-          <button class="buyNowButton">
-            Buy now
-            <img class="redArrow" src="./images/arrowVectorRed.svg" alt="" />
-          </button>
-          <ul class="mobilemenu__list">
-            <li class="mobilemenu__item"><a>Home</a></li>
-            <li class="mobilemenu__item"><a>About us</a></li>
-            <li class="mobilemenu__item"><a>How it`s made?</a></li>
-            <li class="mobilemenu__item"><a>Our products</a></li>
-            <li class="mobilemenu__item"><a>Contact</a></li>
-          </ul>
+      <div class="container container--mobmenu">
+        <div
+          class="menu-container js-menu-container"
+          id="mobile-menu"
+          aria-expanded="false"
+        >
+          <div>
+            <button class="buyNowButton buyNowButton--mobmenu">
+              Buy now
+              <img class="redArrow" src="./images/arrowVectorRed.svg" alt="" />
+            </button>
+            <ul class="mobilemenu__list">
+              <li class="mobilemenu__item">
+                <a class="mobilemenu__link">Home</a>
+              </li>
+              <li class="mobilemenu__item">
+                <a class="mobilemenu__link">About us</a>
+              </li>
+              <li class="mobilemenu__item">
+                <a class="mobilemenu__link">How it`s made?</a>
+              </li>
+              <li class="mobilemenu__item">
+                <a class="mobilemenu__link">Our products</a>
+              </li>
+              <li class="mobilemenu__item">
+                <a class="mobilemenu__link">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
