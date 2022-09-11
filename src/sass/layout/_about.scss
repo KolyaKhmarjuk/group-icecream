@@ -135,6 +135,11 @@
 }
 
 .about__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    fill: #D41443;
     margin-top: 25px;
     width: 176px;
 
@@ -147,5 +152,13 @@
     @media screen and (min-width: 1280px) {
         margin-top: 45px;
     }
+
+    &:hover,
+    &:focus {
+        fill: #ffffff;
+    }     
 }
 
+.about__aroww{
+    margin-left: 14px;
+}
