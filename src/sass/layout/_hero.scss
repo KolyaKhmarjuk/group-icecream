@@ -1,22 +1,24 @@
 .hero {
   position: relative;
   height: 441px;
+  overflow-x: hidden;
 
   background-color: #ffb8ca;
 
   @media screen and (min-width: 768px) {
     height: 100%;
+    overflow-x: visible;
   }
 }
+
 .hero__container {
   height: 100%;
   padding-right: 0;
-  overflow-x: hidden;
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     overflow-x: visible;
-    padding-right: 36px;
-    width: 768px;
+    // padding-right: 36px;
+    // width: 768px;
   }
   @media screen and (min-width: 1280px) {
     overflow-x: visible;
@@ -29,7 +31,7 @@
   content: '';
   position: absolute;
   top: 20px;
-  left: 35px;
+  left: 40px;
   display: block;
   width: 344px;
   height: 344px;
@@ -68,7 +70,7 @@
   }
   @media screen and (min-width: 1280px) {
     left: 49%;
-    top: 0;
+    top: 3px;
     display: inline-block;
   }
 }

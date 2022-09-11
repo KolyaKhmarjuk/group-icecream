@@ -166,7 +166,7 @@
 }
 .rightsBorder__text {
   width: 150px;
-  height: 42px;
+  // height: 42px;
   text-align: center;
   white-space: break-spaces;
 
@@ -179,11 +179,9 @@
   color: #907e82;
 
   @media screen and (min-width: 768px) {
-    width: 278px;
-  }
-  @media screen and (min-width: 768px) {
     width: auto;
     line-height: 1.86em;
+    padding-bottom: 0px;
   }
 }
 .rightsBorder::before {
